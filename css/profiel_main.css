@@ -384,6 +384,36 @@ input[id="name"] {
 .bio .fa-chevron-right {
   color: var(--hover-blue);
 }
+.typed-text {
+  color: var(--hover-blue);
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: var(--white-color);
+  margin-left: 0.2rem;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: var(--white-color);
+  }
+  49% {
+    background-color: var(--white-color);
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--white-color);
+  }
+}
 @media screen and (max-width: 1163px) {
   .hamburg {
     position: fixed;
@@ -479,6 +509,11 @@ input[id="name"] {
   .contact-us-container .col-6 {
     width: 100%;
   }
+  .about-us-container .col-4 img {
+    width: 250px;
+    height: 250px;
+  }
+
   .about-us-container,
   .skill-container,
   .resume-container,
