@@ -432,6 +432,9 @@ input[id="name"] {
     height: 200px;
     max-height: 280px;
   }
+  .navbar {
+    z-index: 100 !important;
+  }
 }
 @media screen and (max-width: 763px) {
   .bio .col-6 {
